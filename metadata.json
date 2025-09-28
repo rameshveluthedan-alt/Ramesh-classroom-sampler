@@ -1,0 +1,5 @@
+{
+  "name": "Systematic Sampling Tool",
+  "description": "A tool for enumerators to perform systematic sampling of students in classrooms, calculate sample intervals, generate random starts, and display the selected sample and reserve lists.",
+  "requestFramePermissions": []
+}
