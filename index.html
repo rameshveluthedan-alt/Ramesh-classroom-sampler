@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Systematic Sampling Tool</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
+    <!-- Babel for in-browser JSX/TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Import map for React 18 -->
+    <script type="importmap">
 {
   "imports": {
+    "react": "https://unpkg.com/react@18/umd/react.development.js",
+    "react-dom/client": "https://unpkg.com/react-dom@18/umd/react-dom.development.js",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1"
+    "react/": "https://aistudiocdn.com/react@^19.1.1/"
   }
 }
 </script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- Use text/babel for Babel to transpile, and a relative path for GitHub Pages -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
